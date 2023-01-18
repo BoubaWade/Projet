@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    position: relative;
+}
+.nav-bar-nba ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+form select{
+    background: none;
+    appearance: none;
+    border: none;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+form select:hover{
+    transform: scale(1.05);
+    color: rgba(58, 60, 60, 0.498);
+}
+form select option:nth-child(odd){
+    background: #fcb69f;
+    font-size: 1rem;
+}
+form select option:nth-child(even){
+    background: #ffecd2; 
+    font-size: 1rem;  
+}
+form select option:first-child{
+    background: rgba(16, 15, 15, 0.676);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.main-container{
+    background: rgba(216, 216, 216, 0.507);
+    width: 50%;
+    margin: 50px 10% 50px 40%;
+    padding: 50px;
+    border-radius: 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    line-height: 30px;
+    box-shadow: -5px -8px 15px 0px #897168;
+} 
+.main-container img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: -5px -8px 15px 0px #897168;
+}
+.players-container-top, .players-container-middle, .players-container-bottom, .players-container-middle, .players-container-bottom{
+    background: rgba(216, 216, 216, 0.507);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px 50px;
+    font-family: "Roboto", sans-serif;   
+}
+.players-container-top img, .players-container-middle img, .players-container-bottom img{
+    width: 40%;
+    border-radius: 30px;
+    box-shadow:  -5px -8px 15px 0px #897168;
+}
+#gsw{
+    position: absolute;
+    width: 30%;
+    top: 10%; 
+    left: 10px; 
+    border-radius: 10px; 
+    box-shadow: -5px -8px 15px 0px #897168;
+}
+#lakers{
+    position: absolute;
+    width: 30%;
+    height: 360px;
+    top: 30%;
+    left: 10px;
+    border-radius: 10px;
+    box-shadow: -5px -8px 15px 0px #897168;
+}
+#boston{
+    position: absolute;
+    width: 30%;
+    top: 55%; 
+    left: 10px; 
+    border-radius: 10px; 
+    box-shadow: -5px -8px 15px 0px #897168;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    line-height: 30px;
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f  100%);
+    box-shadow: -2px -2px 20px;
+}
+footer li{
+    cursor: pointer;
+}

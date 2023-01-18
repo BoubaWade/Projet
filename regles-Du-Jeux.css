@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    width: 50%;
+    margin: 50px auto;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    line-height: 30px;
+}
+h1{
+    text-align: center;
+    line-height: 50px;
+}
+h1:hover{
+    color: rgba(0, 0, 0, 0.559);
+}
+#img-1-page1, #img-2-page1, #img-3-page1, #img-4-page1{
+    width: 100%;
+    height: 430px;
+    margin: 75px 0;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    line-height: 30px;
+    margin: 300px 0 0;
+    
+    
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f  100%);
+    box-shadow: -2px -2px 20px;
+}
+footer li{
+    list-style: none;
+    cursor: pointer;
+}
