@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    position: relative;
+}
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+}
+form{
+    width: 40%;
+    height: 150px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "pdo eml"
+    "ms ms"
+    "r smt";
+    margin: 100px auto 400px;
+    gap: 30px;
+}
+input[type=text],
+input[type=email]{    
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 3px;
+    text-align: center;
+    font-family: "Roboto" sans-serif;
+    font-size: 15px;
+}
+input[type=text]{
+    grid-area: pdo;
+}
+input[type=email]{
+    grid-area: eml;
+}
+textarea{
+    grid-area: ms;
+    resize: none;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+input[type=submit]{
+    grid-area: smt;
+    height: 30px;
+    background: #cd745795;
+    border-radius: 3px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    line-height: 30px;
+    padding: 20px;
+    background: linear-gradient(to right, #ffecd2 0%, #fcb69f  100%);
+    box-shadow: 5px -7px 15px 0px #897168;
+}
+footer li{
+    list-style-type: none;
+    cursor: pointer;
+}
