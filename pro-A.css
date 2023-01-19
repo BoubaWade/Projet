@@ -24,17 +24,31 @@ p{
     background: #e8dbc9c4;
     border-radius: 20px;
     box-shadow: 3px 0px 20px 0;
-    padding: 20px;
+    padding: 40px;
     line-height: 30px;
-    margin: 0 auto 300px
+    margin: 0 10% 200px
+}
+#wemby, #okobo{
+    position: absolute;
+    width: 30%;
+    left: 725px; 
+    border-radius: 10px; 
+    box-shadow: 5px -7px 15px 0px #897168;
+}
+#wemby{
+    top: 130%; 
+}
+#okobo{
+    top: 240%;  
 }
 footer{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     line-height: 30px;
+    padding: 20px;
     background: linear-gradient(to right, #ffecd2 0%, #fcb69f  100%);
-    box-shadow: -2px -2px 20px;
+    box-shadow: 5px -7px 15px 0px #897168;
 }
 footer li{
     cursor: pointer;
