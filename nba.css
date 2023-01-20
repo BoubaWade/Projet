@@ -28,7 +28,6 @@ form select{
 }
 form select:hover{
     transform: scale(1.05);
-    color: rgba(58, 60, 60, 0.498);
 }
 form select option:nth-child(odd){
     background: #fcb69f;

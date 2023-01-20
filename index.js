@@ -1,33 +1,36 @@
 const navList = document.getElementById("nav-list");
-const mainContainer = document.querySelector(".main-container");
+const main = document.querySelector(".main");
 const nbaContainer = document.querySelector(".nba-container");
 const proAContainer = document.querySelector(".pro-a-container");
 const headerContainerH1 = document.querySelector(".header-container > h1");
 
-const arrowRight1 = document.querySelector(".arrow-right-1");
-const arrowRight2 = document.querySelector(".arrow-right-2");
-const arrowLeft1 = document.querySelector(".arrow-left-1");
-const arrowLeft2 = document.querySelector(".arrow-left-2");
+const arrow1 = document.querySelector(".arrow-1");
+const arrow3 = document.querySelector(".arrow-3");
+const arrow2 = document.querySelector(".arrow-2");
+const arrow4 = document.querySelector(".arrow-4");
 
-const arrayContainer = [mainContainer, nbaContainer, proAContainer];
 window.addEventListener("load", () => {
   navList.style.transform = "translateX(0)";
 });
 
-arrowRight1.addEventListener("click", () => {
-  mainContainer.style.transform = "translateX(-1500px)";
-  nbaContainer.style.transform = "translate(-1300px)";
+arrow1.addEventListener("click", () => {
+  main.style.transform = "translateY(-1500px)";
+  nbaContainer.style.transform = "translateY(-785px)";
+  navList.style.transition = "0.05s";
+  navList.style.visibility = "hidden";
 });
-arrowLeft1.addEventListener("click", () => {
-  mainContainer.style.transform = "translateX(0)";
-  nbaContainer.style.transform = "translateX(0)";
+arrow2.addEventListener("click", () => {
+  main.style.transform = "translateY(0)";
+  nbaContainer.style.transform = "translateY(0)";
+  navList.style.transitionDelay = "1s";
+  navList.style.visibility = "visible";
 });
 
-arrowRight2.addEventListener("click", () => {
-  nbaContainer.style.transform = "translateX(-2500px)";
-  proAContainer.style.transform = "translateX(-2600px)";
+arrow3.addEventListener("click", () => {
+  nbaContainer.style.transform = "translateY(-1610px)";
+  proAContainer.style.transform = "translateY(-1610px)";
 });
-arrowLeft2.addEventListener("click", () => {
-  nbaContainer.style.transform = "translateX(-1300px)";
-  proAContainer.style.transform = "translateX(0)";
+arrow4.addEventListener("click", () => {
+  nbaContainer.style.transform = "translateY(-785px)";
+  proAContainer.style.transform = "translateY(0)";
 });
