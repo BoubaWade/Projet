@@ -5,6 +5,9 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+/* html {
+    scroll-behavior: smooth;
+  } */
 :root {
     --title-color: #f4f4f4;
 }
@@ -13,7 +16,7 @@
     src: url(./Assets/fonts/Roboto-Light.ttf);
 }
 body{
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background: url(./Assets/images/bg.jpg) fixed center/cover;
     overflow: hidden;
 }
@@ -29,11 +32,17 @@ a:visited{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
+    padding-top: 20px;
     margin-bottom: 200px;
-    transform: translateX(-2000px);
-    transition: 0.7s ease;   
+    /* transform: translateX(-2000px); */
+    /* animation: nimNavBar 2s;
+    transition: 0.7s ease;    */
 }
+/* @keyframes animNavBar {
+    to{
+        transform: translateX(0);
+    }
+} */
 .nav-bar li{
     text-transform: uppercase;  
     text-align: center;  
@@ -49,6 +58,14 @@ a:visited{
     color:aliceblue;
     transform: scale(1.1) translateY(5px) ;
 }
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 100vh;
+    transition: 1s ease;
+} 
 h1{
    background: -webkit-linear-gradient(#f6f5f4, #e08c70);
    -webkit-background-clip: text;
@@ -58,83 +75,120 @@ h1{
     font-size: 4rem;
     font-family: "Roboto", sans-serif;
     letter-spacing: 10px;
-    margin-bottom: 130px;
-    z-index: -10;
+    margin-bottom: 200px;
+    /* z-index: -10; */
     /* margin-top: 50px; */
     /* text-align: left;    */
     /* margin-left: 50px; */
     
 }
-.main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    /* width: 100vw; */
-    /* margin-top: 50px; */
-    transition: 1s ease;
-    z-index: 0;
-} 
 
-section{
+.main{
+    width: 70%;
     display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    grid-template-rows: 800px 950px 1000px ;
-    margin-bottom: 150px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr) ;
+    gap: 30px;
+    margin: 0 auto 50px;
+    /* margin-bottom: 50px; */
     /* width: 100vw; */
     /* overflow: hidden; */
 }
-section a {
+/* section a {
     width: 80%;
     height: 225px;
     border-radius: 20px;
     opacity: 0.9; 
-}
-.pro-a-container, .nba-container{
+} */
+.rgl-container, 
+.pro-a-container, 
+.nba-container, 
+.euro-league-container,
+.fiba-container, 
+.other-sports-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-between;
+    justify-content:flex-start;
+    /* background: #efc9c948; */
+    border-radius: 22px;
+    /* padding-top: 28px; */
     /* width: 600px; */
     /* margin-top: 80px; */
     transition: 1s ease;
     
 }
-.nba-container{
+/* .nba-container{
     margin-top: 100px;
 }
 .pro-a-container{
     margin-top: 20px;
-}
+} */
 /* .pro-a-container, .nba-container{
     transform: translateY(2000px);
 } */
-.main img, .nba-container img,.pro-a-container img{
-    width: 40%;
-    height: 225px;
+.rgl-container img,
+.nba-container img,
+.pro-a-container img, 
+.euro-league-container img, 
+.fiba-container img, 
+.other-sports-container img{
+    width: 102%;
+    height: 92%;
     border-radius: 20px;
     opacity: 0.9;   
 }
-.main h3, .nba-container h3, .pro-a-container h3{
-    background: -webkit-linear-gradient(#f6f5f4, #e08c70);
+.rgl-container h3, 
+.nba-container h3, 
+.pro-a-container h3, 
+.euro-league-container h3, 
+.fiba-container h3, 
+.other-sports-container h3{
+    /* background: -webkit-linear-gradient(#f6f5f4, #e08c70);
    -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+   -webkit-text-fill-color: transparent; */
     color: var(--title-color);
+    /* color: rgba(0, 0, 0, 0.756); */
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.3vw;
     font-family: "Roboto", sans-serif;
-    letter-spacing: 5px;    
-    
+    letter-spacing: 5px; 
+        
 }
-.main h3{
+/* .main .rgl-container{
+    background: #efc9c9af;
+} */
+.rgl-container:hover, 
+.nba-container:hover, 
+.pro-a-container:hover, 
+.euro-league-container:hover, 
+.fiba-container:hover, 
+.other-sports-container:hover{
+    background:#e08c70;
+    transform: scale(1.1);
+}
+/* .rgl-container h3{
     margin-bottom: 50px;
-}
+} */
 .arrow-1, .arrow-3, .arrow-2, .arrow-4{
     width: 150px;
     height: 100px;
     position: relative;
     transform: rotate(90deg);
+    top: 0;
     cursor: pointer;
+    margin-bottom: 200px;
+    animation: animArrow 1s ease infinite;
+    transition: 0.05s;
+}
+@keyframes animArrow {
+    to{
+       top: 10px;
+    }
+}
+.arrow-2{
+    margin: 0 auto 5%;
+
 }
 .arrow-1-component-top, 
 .arrow-3-component-top, 

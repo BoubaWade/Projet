@@ -82,6 +82,7 @@ form select option:first-child{
     width: 30%;
     top: 10%; 
     left: 150px; 
+    opacity: 0.7;
     border-radius: 10px; 
     box-shadow: 5px -7px 15px 0px #897168;
 }
@@ -91,6 +92,7 @@ form select option:first-child{
     height: 360px;
     top: 30%;
     left: 150px;
+    opacity: 0.7;
     border-radius: 10px;
     box-shadow: 5px -7px 15px 0px #897168;
 }
@@ -99,6 +101,7 @@ form select option:first-child{
     width: 30%;
     top: 52%; 
     left: 150px; 
+    opacity: 0.7;
     border-radius: 10px; 
     box-shadow: 5px -7px 15px 0px #897168;
 }
