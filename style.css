@@ -5,9 +5,6 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-/* html {
-    scroll-behavior: smooth;
-  } */
 :root {
     --title-color: #f4f4f4;
 }
@@ -16,7 +13,6 @@
     src: url(./Assets/fonts/Roboto-Light.ttf);
 }
 body{
-    /* min-height: 100vh; */
     background: url(./Assets/images/bg.jpg) fixed center/cover;
     overflow: hidden;
 }
@@ -34,29 +30,27 @@ a:visited{
     align-items: center;
     padding-top: 20px;
     margin-bottom: 200px;
-    /* transform: translateX(-2000px); */
-    /* animation: nimNavBar 2s;
-    transition: 0.7s ease;    */
 }
-/* @keyframes animNavBar {
-    to{
-        transform: translateX(0);
-    }
-} */
-.nav-bar li{
+.nav-bar li a{
     text-transform: uppercase;  
     text-align: center;  
     font-family: "Roboto", sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
     letter-spacing: 3px;
-    color: var(--title-color);
+    padding: 5px;
     cursor: pointer;
-    transition: 0.3s;
+}
+.nav-bar li{
+    transition: 1s;
+}
+.nav-bar li a:hover{
+    background:#e08c70; ;
+    color:rgba(9, 9, 9, 0.9);
+    border-radius: 5px;
 }
 .nav-bar li:hover{
-    color:aliceblue;
-    transform: scale(1.1) translateY(5px) ;
+    transform: scale(1.1) translateY(5px);
 }
 .header{
     display: flex;
@@ -70,36 +64,20 @@ h1{
    background: -webkit-linear-gradient(#f6f5f4, #e08c70);
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
-    /* color: var(--title-color); */
     text-transform: uppercase;
     font-size: 4rem;
     font-family: "Roboto", sans-serif;
     letter-spacing: 10px;
-    margin-bottom: 200px;
-    /* z-index: -10; */
-    /* margin-top: 50px; */
-    /* text-align: left;    */
-    /* margin-left: 50px; */
-    
+    margin-bottom: 100px;
 }
-
 .main{
     width: 70%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr) ;
-    gap: 30px;
+    gap: 40px;
     margin: 0 auto 50px;
-    /* margin-bottom: 50px; */
-    /* width: 100vw; */
-    /* overflow: hidden; */
 }
-/* section a {
-    width: 80%;
-    height: 225px;
-    border-radius: 20px;
-    opacity: 0.9; 
-} */
 .rgl-container, 
 .pro-a-container, 
 .nba-container, 
@@ -110,54 +88,23 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content:flex-start;
-    /* background: #efc9c948; */
-    border-radius: 22px;
-    /* padding-top: 28px; */
-    /* width: 600px; */
-    /* margin-top: 80px; */
+    border-radius: 15px 0;
     transition: 1s ease;
-    
+    box-shadow: 4px -4px 14px #e08c70;   
 }
-/* .nba-container{
-    margin-top: 100px;
-}
-.pro-a-container{
-    margin-top: 20px;
-} */
-/* .pro-a-container, .nba-container{
-    transform: translateY(2000px);
-} */
-.rgl-container img,
-.nba-container img,
-.pro-a-container img, 
-.euro-league-container img, 
-.fiba-container img, 
-.other-sports-container img{
+img{
     width: 102%;
     height: 92%;
-    border-radius: 20px;
+    border-radius: 20px 0;
     opacity: 0.9;   
 }
-.rgl-container h3, 
-.nba-container h3, 
-.pro-a-container h3, 
-.euro-league-container h3, 
-.fiba-container h3, 
-.other-sports-container h3{
-    /* background: -webkit-linear-gradient(#f6f5f4, #e08c70);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent; */
+h3{
     color: var(--title-color);
-    /* color: rgba(0, 0, 0, 0.756); */
     text-transform: uppercase;
     font-size: 1.3vw;
     font-family: "Roboto", sans-serif;
-    letter-spacing: 5px; 
-        
+    letter-spacing: 5px;        
 }
-/* .main .rgl-container{
-    background: #efc9c9af;
-} */
 .rgl-container:hover, 
 .nba-container:hover, 
 .pro-a-container:hover, 
@@ -165,12 +112,10 @@ h1{
 .fiba-container:hover, 
 .other-sports-container:hover{
     background:#e08c70;
+    box-shadow: none;
     transform: scale(1.1);
 }
-/* .rgl-container h3{
-    margin-bottom: 50px;
-} */
-.arrow-1, .arrow-3, .arrow-2, .arrow-4{
+.arrow-1, .arrow-2{
     width: 150px;
     height: 100px;
     position: relative;
@@ -188,12 +133,9 @@ h1{
 }
 .arrow-2{
     margin: 0 auto 5%;
-
 }
-.arrow-1-component-top, 
-.arrow-3-component-top, 
-.arrow-2-component-top, 
-.arrow-4-component-top{
+.arrow-1-component-top,  
+.arrow-2-component-top{
     position: absolute;
     width: 50px;
     height: 5px;
@@ -202,9 +144,7 @@ h1{
     transform: rotate(45deg) translateY(45px);     
 }
 .arrow-1-component-bottom, 
-.arrow-3-component-bottom,
-.arrow-2-component-bottom, 
-.arrow-4-component-bottom{
+.arrow-2-component-bottom{
     position: absolute;
     top: 95px;
     width: 50px;
@@ -213,16 +153,51 @@ h1{
     background: var(--title-color);
     transform: rotate(-45deg) translateY(-45px);      
 }
-.arrow-2-component-top, .arrow-4-component-top{
+.arrow-2-component-top{
     transform: rotate(-45deg) translateY(45px);     
 }
-.arrow-2-component-bottom, .arrow-4-component-bottom{
+.arrow-2-component-bottom{
     transform: rotate(45deg) translateY(-45px);      
 }
-
-
-@media screen and (max-width: 430px){
-   
-}
+@media screen and (max-width: 700px){
+       .nav-bar ul{
+        visibility: hidden;
+        margin-bottom: 0;
+       }
+       .header{
+           display: inline;
+        }
+        .header h1{
+            font-size: 3.3rem;
+        }
+        .main{
+            width: 90%;
+            margin-bottom:0;   
+        }
+        .main h3{
+            font-size: 15px ;
+        }
+    .arrow-1, .arrow-2{
+     visibility: hidden;
+     height: 0;
+     margin-bottom: 0;
+    }
+ }
+ @media screen and (max-width: 500px){
+    body{
+        overflow: visible;
+       }
+    .header h1{
+        font-size: 2.5rem;
+    }
+    .main{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+ }
     
 

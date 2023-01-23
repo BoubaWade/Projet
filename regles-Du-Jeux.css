@@ -5,10 +5,10 @@
 }
 body{
     background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
-    width: 50%;
+    width: 60%;
     margin: 50px auto;
     font-family: "Roboto", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 30px;
 }
 h1{
@@ -19,14 +19,13 @@ h1:hover{
     color: rgba(0, 0, 0, 0.559);
 }
 img{
-    border-radius: 20px;
-    box-shadow: 5px -7px 15px 0px #897168;
-}
-#img-1-page1, #img-2-page1, #img-3-page1, #img-4-page1{
-    width: 100%;
-    height: 430px;
+    width: 70%;
+    height: 350px;
     margin: 75px 0;
+    border-radius: 20px;
+    box-shadow: 5px -7px 15px 0px #897168;   
 }
+
 footer{
     display: flex;
     justify-content: space-around;
@@ -41,6 +40,27 @@ footer li{
     list-style: none;
     cursor: pointer;
 }
-@media screen and (max-width: 958px){
+@media screen and (max-width: 750px){
+    h1{
+        font-size: 1.8rem;
+    }
+    img{
+        height: 280px;
+    }
+    footer li, footer h4{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 750px){
+    body{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    img{
+        height: 210px;
+        margin: 40px 0;
+    }  
     
 }

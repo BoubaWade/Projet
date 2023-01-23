@@ -53,3 +53,35 @@ footer{
 footer li{
     cursor: pointer;
 }
+@media screen and (max-width: 750px){
+    
+    iframe{
+        visibility: hidden;
+    }
+    #wemby{
+        width: 50%;
+        top: 500px; 
+        left:200px;
+
+    }
+    #okobo{
+        width: 50%;
+        top: 220px; 
+        left:100px;
+    }
+    p{
+        width: 70%;
+        font-size: 13px;
+        margin: 0 auto;
+        border-radius: 20px 20px 0 0;
+        text-align: left;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 12px;
+    }
+    
+    
+}
