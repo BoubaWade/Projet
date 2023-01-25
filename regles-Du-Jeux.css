@@ -25,7 +25,6 @@ img{
     border-radius: 20px;
     box-shadow: 5px -7px 15px 0px #897168;   
 }
-
 footer{
     display: flex;
     justify-content: space-around;
@@ -61,6 +60,5 @@ footer li{
     img{
         height: 210px;
         margin: 40px 0;
-    }  
-    
+    }      
 }

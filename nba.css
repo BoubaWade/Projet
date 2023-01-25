@@ -81,7 +81,7 @@ form select option:first-child{
     position: absolute;
     width: 30%;
     top: 10%; 
-    left: 150px; 
+    left: 140px; 
     opacity: 0.7;
     border-radius: 10px; 
     box-shadow: 5px -7px 15px 0px #897168;
@@ -91,7 +91,7 @@ form select option:first-child{
     width: 30%;
     height: 360px;
     top: 30%;
-    left: 150px;
+    left: 140px;
     opacity: 0.7;
     border-radius: 10px;
     box-shadow: 5px -7px 15px 0px #897168;
@@ -100,7 +100,7 @@ form select option:first-child{
     position: absolute;
     width: 30%;
     top: 52%; 
-    left: 150px; 
+    left: 140px; 
     opacity: 0.7;
     border-radius: 10px; 
     box-shadow: 5px -7px 15px 0px #897168;
@@ -117,4 +117,44 @@ footer{
 footer li{
     list-style-type: none;
     cursor: pointer;
+}
+@media screen and (max-width: 950px){
+    .main-container{
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 1rem;
+        line-height: 25px;
+        box-shadow: -5px -8px 10px 0px #897168;
+    }
+    .main-container img{
+        width: 80%;
+        border-radius: 10px;
+        margin: 0 auto 30px;
+        box-shadow: -5px -8px 10px 0px #897168;
+    }
+    #gsw, #lakers, #boston{
+        display: none;
+    }
+}
+@media screen and (max-width: 650px){
+    #gsw, #lakers, #boston{
+        display: none;
+    }
+    .main-container{
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 1rem;
+        line-height: 25px;
+        box-shadow: -5px -8px 10px 0px #897168;
+    } 
+    .main-container img{
+        width: 80%;
+        border-radius: 10px;
+        margin: 0 auto 30px;
+        box-shadow: -5px -8px 10px 0px #897168;
+    }
 }

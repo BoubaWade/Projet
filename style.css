@@ -70,6 +70,50 @@ h1{
     letter-spacing: 10px;
     margin-bottom: 100px;
 }
+.arrow-1, .arrow-2{
+    width: 150px;
+    height: 100px;
+    position: relative;
+    transform: rotate(90deg);
+    top: 0;
+    cursor: pointer;
+    margin-bottom: 200px;
+    animation: animArrow 1s ease infinite;
+    transition: 0.05s;
+}
+@keyframes animArrow {
+    to{
+       top: 10px;
+    }
+}
+.arrow-2{
+    margin: 0 auto 5%;
+}
+.arrow-1-component-top,  
+.arrow-2-component-top{
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    left: 50px;
+    background: var(--title-color);
+    transform: rotate(45deg) translateY(45px);     
+}
+.arrow-1-component-bottom, 
+.arrow-2-component-bottom{
+    position: absolute;
+    top: 95px;
+    width: 50px;
+    height: 5px;
+    left: 50px;
+    background: var(--title-color);
+    transform: rotate(-45deg) translateY(-45px);      
+}
+.arrow-2-component-top{
+    transform: rotate(-45deg) translateY(45px);     
+}
+.arrow-2-component-bottom{
+    transform: rotate(45deg) translateY(-45px);      
+}
 .main{
     width: 70%;
     display: grid;
@@ -115,70 +159,25 @@ h3{
     box-shadow: none;
     transform: scale(1.1);
 }
-.arrow-1, .arrow-2{
-    width: 150px;
-    height: 100px;
-    position: relative;
-    transform: rotate(90deg);
-    top: 0;
-    cursor: pointer;
-    margin-bottom: 200px;
-    animation: animArrow 1s ease infinite;
-    transition: 0.05s;
-}
-@keyframes animArrow {
-    to{
-       top: 10px;
-    }
-}
-.arrow-2{
-    margin: 0 auto 5%;
-}
-.arrow-1-component-top,  
-.arrow-2-component-top{
-    position: absolute;
-    width: 50px;
-    height: 5px;
-    left: 50px;
-    background: var(--title-color);
-    transform: rotate(45deg) translateY(45px);     
-}
-.arrow-1-component-bottom, 
-.arrow-2-component-bottom{
-    position: absolute;
-    top: 95px;
-    width: 50px;
-    height: 5px;
-    left: 50px;
-    background: var(--title-color);
-    transform: rotate(-45deg) translateY(-45px);      
-}
-.arrow-2-component-top{
-    transform: rotate(-45deg) translateY(45px);     
-}
-.arrow-2-component-bottom{
-    transform: rotate(45deg) translateY(-45px);      
-}
 @media screen and (max-width: 700px){
        .nav-bar ul{
-        visibility: hidden;
-        margin-bottom: 0;
+        display: none;
        }
        .header{
            display: inline;
         }
         .header h1{
+            margin: 30px auto;
             font-size: 3.3rem;
         }
         .main{
             width: 90%;
-            margin-bottom:0;   
         }
         .main h3{
             font-size: 15px ;
         }
     .arrow-1, .arrow-2{
-     visibility: hidden;
+     display: none;
      height: 0;
      margin-bottom: 0;
     }
